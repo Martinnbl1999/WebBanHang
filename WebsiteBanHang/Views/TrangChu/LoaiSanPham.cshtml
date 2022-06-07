@@ -1,0 +1,9 @@
+﻿@model IEnumerable<WebsiteBanHang.Models.LoaiSanPham>
+
+@foreach (var item in Model)
+{
+   <a href="@Url.Action("SPTheoLoai","TrangChu",new { id = item.maloaisanpham})" class="list-group-item">
+        @item.tenloaisanpham
+   </a>
+
+}

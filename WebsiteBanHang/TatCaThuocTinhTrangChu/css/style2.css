@@ -1,0 +1,46 @@
+﻿
+#showsanpham {
+    border: 1px solid #E8E7DC;
+    cursor: pointer;
+    display: block;
+    display: inline-block;
+    font-size: 0.88em;
+    letter-spacing: 2px;
+    color: #525049;
+    padding: 8px;
+    text-decoration: none;
+    width: 98.5%;
+    background: #575757;
+    color: #fff;
+    text-transform: uppercase;
+    border-top: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.cart-top {
+    padding: 1em 1em;
+    background: #808080;
+    border-radius: 5px 5px 0px 0px;
+    border: 3px solid #000;
+}
+.cart-bottom {
+    
+    padding: 2em 2em;
+    border-radius: 5px 5px 0px 0px;
+    border: 3px solid #000;
+}
+.cart-experience h4 {
+    font-size: 0.9em;
+    color:white;
+    text-align: center;
+}
+tr.main-heading th {
+    padding: 1em 1.35em;
+    font-size: 1em;
+    color: black;
+    font-weight:bold;
+}
+tr.main-heading{
+    background: #808080;
+}
+
+

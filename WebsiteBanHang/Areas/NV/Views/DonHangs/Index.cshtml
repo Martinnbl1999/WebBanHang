@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebsiteBanHang.Models.DonHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/NV/Views/Shared/Trangpageconnv.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="content-table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tinhtranggiaohang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ngaydathang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ngaygiaohang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KhachHang.tenkh)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tinhtranggiaohang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ngaydathang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ngaygiaohang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KhachHang.tenkh)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.madonhang }) |
+            @Html.ActionLink("Details", "Details", new { id=item.madonhang }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.madonhang })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,70 @@
+﻿@model WebsiteBanHang.Models.NhanVien
+
+@{
+    ViewBag.Title = "IndexRoleUser";
+    Layout = "~/Areas/NV/Views/Shared/Trangpageconnv.cshtml";
+}
+
+<table class="content-table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tennv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ngaysinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diachi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sdt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.role)
+        </th>
+        <th></th>
+    </tr>
+
+@*@foreach (var item in Model) {*@
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.tennv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.ngaysinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.diachi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.sdt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.role)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id= Model.manv }) |
+            
+        </td>
+    </tr>
+@*}*@
+
+</table>

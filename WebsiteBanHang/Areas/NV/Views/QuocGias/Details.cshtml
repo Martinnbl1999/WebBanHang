@@ -1,0 +1,27 @@
+﻿@model WebsiteBanHang.Models.QuocGia
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/NV/Views/Shared/Trangpageconnv.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>QuocGia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.quogia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quogia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.maquocgia }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

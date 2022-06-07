@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d32be2ed349748ce81bbddb621f9ad09" Name="Diagram1">
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.ChiTiet_DonHang_Sanpham" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.Chitiet_PhieuNhapHang_SanPham" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.DonHang" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.KhachHang" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.LoaiSanPham" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.NhanVien" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.NhaPhanPhoi" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.PhieuNhapHang" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.QuocGia" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebsiteQuanLyCuaHangSoiModel.SanPham" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_ChiTiet_DonHang_Sanpham_DonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_ChiTiet_DonHang_Sanpham_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_Chitiet_PhieuNhapHang_SanPham_PhieuNhapHang1" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_Chitiet_PhieuNhapHang_SanPham_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_DonHang_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_SanPham_LoaiSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_PhieuNhapHang_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_PhieuNhapHang_NhaPhanPhoi" ManuallyRouted="false" />
+        <AssociationConnector Association="WebsiteQuanLyCuaHangSoiModel.FK_SanPham_QuocGia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

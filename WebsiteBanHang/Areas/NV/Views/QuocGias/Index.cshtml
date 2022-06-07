@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WebsiteBanHang.Models.QuocGia>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/NV/Views/Shared/Trangpageconnv.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="content-table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.quogia)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.quogia)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.maquocgia }) |
+            @Html.ActionLink("Details", "Details", new { id=item.maquocgia }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.maquocgia })
+        </td>
+    </tr>
+}
+
+</table>

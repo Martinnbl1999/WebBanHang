@@ -1,0 +1,20 @@
+﻿@model IEnumerable<WebsiteBanHang.Models.SanPham>
+@using WebsiteBanHang.Models
+
+@foreach (var sanphammoi in Model)
+{
+    <div class="grid_1_of_4 images_1_of_4 products-info">
+        <img alt="@sanphammoi.tensanpham" src="~/TatCaThuocTinhTrangChu/images/@sanphammoi.hinhanh"  />
+            <a href="@Url.Action("Details","SanPham",new { id=sanphammoi.masp})">
+                @sanphammoi.tensanpham
+            </a>
+            <h3>@sanphammoi.dongia</h3>
+            <ul>
+                @*<li><a class="cart" href="@Url.Action("DangNhap","DangNhap/Account")"> </a></li>*@
+                <li><a class="cart" href="@Url.Action("ThemGioHang", "GioHang", new { @imasp = sanphammoi.masp, @strURL = Request.Url.ToString() })"> </a></li>
+                <li><a class="i" href="@Url.Action("TrangChiTietSanPham","TrangChu", new { id = sanphammoi.masp })"> </a></li>
+                <li><a class="Compar" href="single.html"> </a></li>
+                <li><a class="Wishlist" href="single.html"> </a></li>
+            </ul>
+    </div>
+}

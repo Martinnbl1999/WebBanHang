@@ -1,0 +1,51 @@
+﻿@model WebsiteBanHang.Models.DonHang
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/KH/Views/Shared/TrangpageconKH.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DonHang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tinhtranggiaohang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tinhtranggiaohang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaydathang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaydathang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaygiaohang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaygiaohang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KhachHang.tenkh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KhachHang.tenkh)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.madonhang }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,27 @@
+﻿@model WebsiteBanHang.Models.LoaiSanPham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/NV/Views/Shared/Trangpageconnv.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LoaiSanPham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tenloaisanpham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenloaisanpham)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.maloaisanpham }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
